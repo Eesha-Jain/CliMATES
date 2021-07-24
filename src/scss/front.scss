@@ -2,7 +2,6 @@
 
 .Front {
     background: $gradient;
-    height: 100vh;
     color: $white;
     font-family: "HeroNewHairline";
 
@@ -15,7 +14,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 80vh;
+        height: 91.5vh;
 
         h1 {
             font-size: 100px;
@@ -30,7 +29,7 @@
             margin-bottom: 30px;
         }
 
-        button {
+        a {
             padding: 10px 30px;
             border: 1px solid $white;
             background: none;

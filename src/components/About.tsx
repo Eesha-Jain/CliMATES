@@ -1,9 +1,54 @@
 import React from 'react';
 import '../scss/about.scss';
+import infographic from "../assets/infographic.jpg";
+import logo from "../assets/logo.png";
+import NavBar from './NavBar';
 
 function About() {
   return (
-    <div>
+    <div className="About">
+      <div className="top">
+        <NavBar />
+        <div className="centered"><h1>ABOUT</h1></div>
+      </div>
+
+      <div className="content">
+        
+        <div className="grid">
+          <div className="gridItem">
+            <div>
+              <h4>What is Global Warming?</h4>
+              <p>Global Warming is a gradual increase in the overall temperature of the earth's atmosphere generally attributed to the greenhouse effect caused by increased levels of carbon dioxide, chlorofluorocarbons, and other pollutants. (Definition provided by Google)</p>
+              <br/>
+              <p>To some extent, global warming is a natural process that keeps us alive. However, due to pollutants that humans have released into the atmosphere, this has become excessive to the point that it is damaging our environment.</p>
+            </div>
+          </div>
+
+          <div className="gridItem">
+            <img src={infographic} alt="Global Warming Infographic" style={{width: 400, borderRadius: 10}} />
+          </div>
+        </div>
+
+        <div className="grid">
+          <div className="gridItem">
+            <img src={logo} alt="Logo" style={{width: 100}} />
+          </div>
+
+          <div className="gridItem">
+            <div>
+              <h4>What is CliMATES?</h4>
+              <p>CliMATES is an effort to help change the outcome of this phenomenon by helping users truly understand the impact of each decision they make. They can track their water, carbon, and energy levels to see how much they waste over the course of years and understand how they can make a difference. Become a part of our effort. Become a MATE! </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div>
+          <h4>Credits</h4>
+          <p>The sole developer of this project is <a href="https://github.com/Eesha-Jain">Eesha Jain</a>. She gives credit to all resources from her research. She also gives credit to the respective owners of the images that she does not own on this website. Lastly, she would like to thank HackTable for encouraging her to develop this site, and everyone who supports her for helping her along the way!</p>
+        </div>
+      </div>
     </div>
   );
 }
