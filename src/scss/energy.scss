@@ -1,10 +1,30 @@
 @import 'vars';
 
 .Energy {
-    #energy.tab-label {
+    font-family: "HeroNewHairline";
+
+    #energy {
         border-bottom: 1px solid $white;
         transition: all 0.35s;
         z-index: 1;
-        top: -0.0625rem;
+    }
+
+    .top {
+        background: $gradient;
+        color: $white;
+
+        .centered {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+    
+            h1 {
+                font-size: 100px;
+                margin: 0;
+                padding: 0;
+            }
+        }
     }
 }
