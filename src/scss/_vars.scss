@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "HeroNewBold";
+    src: url("../fonts/Bold.otf");
+}
+
+@font-face {
+    font-family: "HeroNewExtraBold";
+    src: url("../fonts/ExtraBold.otf");
+}
+
+@font-face {
+    font-family: "HeroNewHairline";
+    src: url("../fonts/Hairline.otf");
+}
+
+@font-face {
+    font-family: "HeroNewHairlineItalic";
+    src: url("../fonts/HairlineItalic.otf");
+}
+
+@font-face {
+    font-family: "HeroNewLight";
+    src: url("../fonts/Light.otf");
+}
+
+@font-face {
+    font-family: "HeroNewMedium";
+    src: url("../fonts/Medium.otf");
+}
+
+@font-face {
+    font-family: "HeroNewRegular";
+    src: url("../fonts/Regular.otf");
+}
+
+@font-face {
+    font-family: "HeroNewSemiBoldItalic";
+    src: url("../fonts/SemiBoldItalic.otf");
+}
+
+@font-face {
+    font-family: "HeroNewSuper";
+    src: url("../fonts/Super.otf");
+}
+
+@font-face {
+    font-family: "HeroNewThin";
+    src: url("../fonts/Thin.otf");
+}
+
+@font-face {
+    font-family: "HeroNewUltraLight";
+    src: url("../fonts/UltraLight.otf");
+}
+
+$purple: rgb(141, 45, 145);
+$blue: rgb(45, 49, 146);
+$white: rgb(255, 255, 255);
+$gradient: linear-gradient(120deg, $purple, $blue);
+$phoneWidth: 700px;

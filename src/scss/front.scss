@@ -1,0 +1,11 @@
+@import 'vars';
+
+.Front {
+    background: $gradient;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-family: "HeroNewHairline";
+}
