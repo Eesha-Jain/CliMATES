@@ -3,9 +3,43 @@
 .Front {
     background: $gradient;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: $white;
     font-family: "HeroNewHairline";
+
+    .tab {
+        display: none !important;
+    }
+    
+    .centered {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+
+        h1 {
+            font-size: 100px;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        a {
+            padding: 10px 30px;
+            border: 1px solid $white;
+            background: none;
+            outline: none;
+            color: $white;
+            font-family: "HeroNewHairline";
+            border-radius: 50px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
 }

@@ -1,0 +1,10 @@
+@import 'vars';
+
+.Energy {
+    #energy.tab-label {
+        border-bottom: 1px solid $white;
+        transition: all 0.35s;
+        z-index: 1;
+        top: -0.0625rem;
+    }
+}

@@ -1,0 +1,143 @@
+@import 'vars';
+
+.NavBar {
+    .tabs {
+        position: relative;
+        padding: 5px 0px;
+        list-style-type: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .tab {
+        float: right;
+    }
+
+    .tab-switch {
+        display: none;
+    }
+
+    .tab-label {
+        position: relative;
+        display: block;
+        line-height: 3em;
+        height: 3.2em;
+        padding: 0 1.5em;
+        color: #fff;
+        cursor: pointer;
+        top: 0;
+        text-decoration: none;
+    }
+
+    .tab-label:hover {
+        top: -0.25rem;
+        transition: top 0.25s;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .logo a:hover {
+        text-decoration: none;
+    }
+
+    .tabs li {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .toggle {
+        order: 1;
+    }
+
+    .tab.button {
+        order: 2;
+    }
+
+    .tab {
+        width: 90%;
+        text-align: center;
+        order: 3;
+        display: none;
+    }
+
+    .tab.active {
+        display: block;
+    }
+
+    .tabs {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .toggle {
+        cursor: pointer;
+    }
+
+    .bars {
+        background: black;
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+
+    .bars:before,
+    .bars:after {
+        background: black;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .bars:before {
+        top: 5px;
+    }
+
+    .bars:after {
+        top: -5px;
+    }
+
+    @media all and (min-width: 768px) {
+        .tab {
+            display: block;
+            width: auto;
+        }
+        .toggle {
+            display: none;
+        }
+        .logo {
+            order: 0;
+        }
+        .tab {
+            order: 1;
+        }
+        .tabs li.button {
+            padding-right: 0;
+        }
+        .tab.contact-tab {
+            margin-right: 10px;
+        }
+    }
+}
