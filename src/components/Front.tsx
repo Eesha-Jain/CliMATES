@@ -4,9 +4,9 @@ import NavBar from './NavBar';
 function Front() {
   return (
     <div className="Front">
+      <NavBar />
+      
       <div className="centered">
-        <NavBar />
-        
         <div>
           <h1>CliMATES</h1>
           <p>MATES Fighting Climate Change</p>
