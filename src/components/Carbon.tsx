@@ -12,9 +12,8 @@ function Carbon() {
       </div>
 
       <div className="content">
-        
-      </div>
 
+      </div>
       <Footer />
     </div>
   );
