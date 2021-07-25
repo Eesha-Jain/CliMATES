@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/energy.scss';
+import Footer from './Footer';
 import NavBar from './NavBar';
 
 function Energy() {
@@ -9,6 +10,12 @@ function Energy() {
         <NavBar />
         <div className="centered"><h1>ENERGY</h1></div>
       </div>
+
+      <div className="content">
+        
+      </div>
+
+      <Footer />
     </div>
   );
 }

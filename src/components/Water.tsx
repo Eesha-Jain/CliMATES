@@ -3,6 +3,7 @@ import '../scss/water.scss';
 import NavBar from './NavBar';
 
 import CanvasJSReact from './canvasjs.react';
+import Footer from './Footer';
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
@@ -198,6 +199,8 @@ function Water() {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 }

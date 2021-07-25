@@ -3,6 +3,7 @@ import '../scss/about.scss';
 import infographic from "../assets/infographic.jpg";
 import logo from "../assets/logo.png";
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 function About() {
   return (
@@ -43,12 +44,9 @@ function About() {
         </div>
 
         <br />
-
-        <div>
-          <h4>Credits</h4>
-          <p>The sole developer of this project is <a href="https://github.com/Eesha-Jain">Eesha Jain</a>. She gives credit to all resources from her research. She also gives credit to the respective owners of the images that she does not own on this website. Lastly, she would like to thank HackTable for encouraging her to develop this site, and everyone who supports her for helping her along the way!</p>
-        </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

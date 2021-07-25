@@ -1,0 +1,12 @@
+@import 'vars';
+
+.Footer {
+    background: $gradient;
+    text-align: center;
+    padding: 10px;
+    color: $white;
+
+    p {
+        margin: 0;
+    }
+}

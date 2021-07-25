@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/carbon.scss';
+import Footer from './Footer';
 import NavBar from './NavBar';
 
 function Carbon() {
@@ -9,6 +10,12 @@ function Carbon() {
         <NavBar />
         <div className="centered"><h1>CARBON</h1></div>
       </div>
+
+      <div className="content">
+        
+      </div>
+
+      <Footer />
     </div>
   );
 }
