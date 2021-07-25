@@ -37,6 +37,20 @@
             background-color: $lightgray;
         }
 
+        .aboveBig {
+            color: $blue;
+        }
+
+        .thicker {
+            font-family: "HeroNewBold";
+        }
+
+        .big {
+            font-size: 100px;
+            margin: 0;
+            color: $purple;
+        }
+
         .form {
             border-radius: 5px;
         }

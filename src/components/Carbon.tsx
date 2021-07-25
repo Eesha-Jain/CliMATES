@@ -168,7 +168,7 @@ function Carbon() {
 
             <br />
 
-            <div className="slickBox">Pounds Wasted: {pounds - num}</div>
+            <div className="slickBox">Pounds Wasted: {Math.max(pounds - num, 0)}</div>
             <br />
             <div className="slickBox">
               <CanvasJSChart options = {options}
@@ -177,6 +177,11 @@ function Carbon() {
             </div>
           </div>
         </div>
+
+        <br />
+
+        <h3 className="aboveBig">If <span className="thicker">100 Million</span> people reduced their carbon footprint by the same amount, then we could save ...</h3>
+        <p className="big">{(Math.max((pounds - 210) * 1000000000), 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} pounds</p>
       </div>
       
       <Footer />

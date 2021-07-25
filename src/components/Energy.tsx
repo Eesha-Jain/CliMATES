@@ -210,7 +210,7 @@ function Energy() {
 
             <br />
 
-            <div className="slickBox">Watts Wasted: {joules - num}</div>
+            <div className="slickBox">Watts Wasted: {Math.max(joules - num, 0)}</div>
             <br />
             <div className="slickBox">
               <CanvasJSChart options = {options}
@@ -219,6 +219,12 @@ function Energy() {
             </div>
           </div>
         </div>
+
+        
+        <br />
+
+        <h3 className="aboveBig">If <span className="thicker">100 Million</span> people saved the same amount of electricity, then we could save ...</h3>
+        <p className="big">{(Math.max((joules - 210) * 1000000000, 0)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} watts</p>
       </div>
       
       <Footer />

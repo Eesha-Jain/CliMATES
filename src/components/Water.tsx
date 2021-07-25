@@ -190,7 +190,7 @@ function Water() {
 
             <br />
 
-            <div className="slickBox">Gallons Wasted: {gallons - 210}</div>
+            <div className="slickBox">Gallons Wasted: {Math.max(gallons - 210, 0)}</div>
             <br />
             <div className="slickBox">
               <CanvasJSChart options = {options}
@@ -199,8 +199,12 @@ function Water() {
             </div>
           </div>
         </div>
+
+        <br />
+
+        <h3 className="aboveBig">If <span className="thicker">100 Million</span> people saved the same amount of water, then we could save ...</h3>
+        <p className="big">{Math.max(((gallons - 210) * 1000000000), 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} gallons</p>
       </div>
-      
       <Footer />
     </div>
   );
