@@ -4,7 +4,6 @@ import NavBar from './NavBar';
 
 import CanvasJSReact from './canvasjs.react';
 import Footer from './Footer';
-var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 function Energy() {
