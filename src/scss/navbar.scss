@@ -68,10 +68,19 @@
     }
 
     .tab {
-        width: 90%;
         text-align: center;
         order: 3;
         display: none;
+
+        .tab-label {
+            @media all and (max-width: 768px) {
+                padding: 10px !important;
+            }
+        }
+
+        @media all and (max-width: 768px) {
+            width: auto !important;
+        }
     }
 
     .tab.active {
@@ -84,9 +93,13 @@
 
     .logo {
         flex: 1;
+
+        @media all and (max-width: 768px) {
+            margin-right: 90%;
+        }
     }
 
-    .toggle {
+    /*.toggle {
         order: 2;
     }
 
@@ -120,9 +133,9 @@
 
     .bars:after {
         top: -5px;
-    }
+    }*/
 
-    @media all and (min-width: 768px) {
+    //@media all and (min-width: 768px) {
         .tab {
             display: block;
             width: auto;
@@ -139,8 +152,5 @@
         .tabs li.button {
             padding-right: 0;
         }
-        .tab.contact-tab {
-            margin-right: 10px;
-        }
-    }
+    //}
 }

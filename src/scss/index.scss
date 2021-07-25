@@ -31,3 +31,15 @@ code {
   font-family: "HeroNewHairline", source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  @media all and (max-width: 768px) {
+    font-size: 80px !important;
+  }
+}
+
+.grid {
+  @media all and (max-width: 768px) {
+    grid-template-columns: auto !important;
+  }
+}

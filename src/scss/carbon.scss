@@ -49,6 +49,10 @@
             font-size: 100px;
             margin: 0;
             color: $purple;
+
+            @media all and (max-width: 700px) {
+                font-size: 30px;
+            }
         }
 
         .form {

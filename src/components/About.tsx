@@ -16,17 +16,17 @@ function About() {
       <div className="content">
         
         <div className="grid">
-          <div className="gridItem">
-            <div>
+          <div className="gridItem" style={{ flexDirection: 'row' }}>
+            <div className="setWidth" style={{ flexShrink: 1 }}>
               <h4>What is Global Warming?</h4>
-              <p>Global Warming is a gradual increase in the overall temperature of the earth's atmosphere generally attributed to the greenhouse effect caused by increased levels of carbon dioxide, chlorofluorocarbons, and other pollutants. (Definition provided by Google)</p>
+              <p style={{ flexShrink: 1 }}>Global Warming is a gradual increase in the overall temperature of the earth's atmosphere generally attributed to the greenhouse effect caused by increased levels of carbon dioxide, chlorofluorocarbons, and other pollutants. (Definition provided by Google)</p>
               <br/>
               <p>To some extent, global warming is a natural process that keeps us alive. However, due to pollutants that humans have released into the atmosphere, this has become excessive to the point that it is damaging our environment.</p>
             </div>
           </div>
 
           <div className="gridItem">
-            <img src={infographic} alt="Global Warming Infographic" style={{width: 400, borderRadius: 10}} />
+            <img src={infographic} className="infographic" alt="Global Warming Infographic" style={{width: 400, borderRadius: 10}} />
           </div>
         </div>
 
