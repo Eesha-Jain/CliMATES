@@ -17,6 +17,7 @@ function Carbon() {
   let [seven, setSeven] = useState(0);
   let [eight, setEight] = useState(0);
   let [nine, setNine] = useState(0);
+  let [message, setMessage] = useState("");
 
   let num = 56520;
 
@@ -90,6 +91,12 @@ function Carbon() {
   function submitted(event: any) {
     event.preventDefault();
     changePounds();
+    
+    if (localStorage.getItem("carbon") != null) {
+      setMessage("You saved " + (Number(localStorage.getItem("carbon")) - pounds).toString() + " pounds since last time");
+    }
+
+    localStorage.setItem("carbon", pounds.toString());
   }
 
   const onChangeOne = (event: any) => { setOne(event.target.value); changePounds(); };
@@ -156,6 +163,9 @@ function Carbon() {
 
                 <button onClick={submitted}>Submit</button>
               </form>
+
+              <br />
+              <p style={{color: 'rgb(141, 45, 145)'}}><i className='fas fa-star'></i>{message} <i className='fas fa-star'></i></p>
             </div>
           </div>
 
@@ -168,7 +178,7 @@ function Carbon() {
 
             <br />
 
-            <div className="slickBox">Pounds Wasted: {Math.max(pounds - num, 0)}</div>
+            <div className="slickBox">Pounds Wasted: {pounds - num}</div>
             <br />
             <div className="slickBox">
               <CanvasJSChart options = {options}
@@ -181,7 +191,7 @@ function Carbon() {
         <br />
 
         <h3 className="aboveBig">If <span className="thicker">100 Million</span> people reduced their carbon footprint by the same amount, then we could save ...</h3>
-        <p className="big">{(Math.max((pounds - 210) * 1000000000), 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} pounds</p>
+        <p className="big">{((pounds - 210) * 1000000000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} pounds</p>
       </div>
       
       <Footer />

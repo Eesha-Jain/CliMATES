@@ -41,9 +41,9 @@ I learned how to
 
 ## What's next for CliMATES 🎯
 I have many goals for CliMATES!
-* Track how users are saving money over time
 * Add more tracking tabs
 * Implement accounts using Node.js + Express.js + MongoDB + Mongoose: goals, compete with friends, and more!
+* Track users progress over time (will be helpful with accounts)
 * Integrate with every day items like computers, apple watch, etc. to help every day users understand the impact they can make
 
 With all these features, CliMATES can truly become a connected platform that takes perserving steps towards ending global warming and saving our planet!

@@ -21,6 +21,7 @@ function Water() {
   let [eleven, setEleven] = useState(0);
   let [tweleve, setTweleve] = useState(0);
   let [thirteen, setThirteen] = useState(0);
+  let [waterMessage, setWaterMessage] = useState("");
 
   const options = {
     animationEnabled: true,
@@ -92,6 +93,12 @@ function Water() {
   function submitted(event: any) {
     event.preventDefault();
     changeGallons();
+    
+    if (localStorage.getItem("water") != null) {
+      setWaterMessage("You saved " + (Number(localStorage.getItem("water")) - gallons).toString() + " gallons since last time");
+    }
+
+    localStorage.setItem("water", gallons.toString());
   }
 
   const onChangeOne = (event: any) => { setOne(event.target.value); changeGallons(); };
@@ -178,6 +185,9 @@ function Water() {
 
                 <button onClick={submitted}>Submit</button>
               </form>
+
+              <br />
+              <p style={{color: 'rgb(141, 45, 145)'}}><i className='fas fa-star'></i>{waterMessage} <i className='fas fa-star'></i></p>
             </div>
           </div>
 
@@ -190,7 +200,7 @@ function Water() {
 
             <br />
 
-            <div className="slickBox">Gallons Wasted: {Math.max(gallons - 210, 0)}</div>
+            <div className="slickBox">Gallons Wasted: {gallons - 210}</div>
             <br />
             <div className="slickBox">
               <CanvasJSChart options = {options}
@@ -203,7 +213,7 @@ function Water() {
         <br />
 
         <h3 className="aboveBig">If <span className="thicker">100 Million</span> people saved the same amount of water, then we could save ...</h3>
-        <p className="big">{Math.max(((gallons - 210) * 1000000000), 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} gallons</p>
+        <p className="big">{((gallons - 210) * 1000000000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} gallons</p>
       </div>
       <Footer />
     </div>

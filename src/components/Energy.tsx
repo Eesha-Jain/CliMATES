@@ -24,6 +24,7 @@ function Energy() {
   let [fourteen, setFourteen] = useState(0);
   let [fifteen, setFifteen] = useState(0);
   let [sixteen, setSixteen] = useState(0);
+  let [message, setMessage] = useState("");
 
   let num = 406;
 
@@ -97,6 +98,12 @@ function Energy() {
   function submitted(event: any) {
     event.preventDefault();
     changeJoules();
+    
+    if (localStorage.getItem("energy") != null) {
+      setMessage("You saved " + (Number(localStorage.getItem("energy")) - joules).toString() + " watts since last time");
+    }
+
+    localStorage.setItem("energy", joules.toString());
   }
 
   const onChangeOne = (event: any) => { setOne(event.target.value); changeJoules(); };
@@ -198,6 +205,9 @@ function Energy() {
 
                 <button onClick={submitted}>Submit</button>
               </form>
+
+              <br />
+              <p style={{color: 'rgb(141, 45, 145)'}}><i className='fas fa-star'></i>{message} <i className='fas fa-star'></i></p>
             </div>
           </div>
 
@@ -210,7 +220,7 @@ function Energy() {
 
             <br />
 
-            <div className="slickBox">Watts Wasted: {Math.max(joules - num, 0)}</div>
+            <div className="slickBox">Watts Wasted: {joules - num}</div>
             <br />
             <div className="slickBox">
               <CanvasJSChart options = {options}
@@ -224,7 +234,7 @@ function Energy() {
         <br />
 
         <h3 className="aboveBig">If <span className="thicker">100 Million</span> people saved the same amount of electricity, then we could save ...</h3>
-        <p className="big">{(Math.max((joules - 210) * 1000000000, 0)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} watts</p>
+        <p className="big">{((joules - 210) * 1000000000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} watts</p>
       </div>
       
       <Footer />
