@@ -1,7 +1,5 @@
 # Welcome to CliMATES
-
-Hello! CliMATES is an effort to reduce global warming! Monitor how much resources you use and see how much you can save to help the plant!
-
 **We are MATES fighting CLIMATE CHANGE!**
+This app allows users to track how much water, carbon, and energy they are wasting to help become of the growing community fighting global warming!
 
 Check it out here! https://cli-mates.netlify.app/
