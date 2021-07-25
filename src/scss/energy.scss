@@ -27,4 +27,54 @@
             }
         }
     }
+
+    .content {
+        padding: 10px;
+        font-family: "HeroNewThin";
+
+        .slickBox {
+            padding: 10px;
+            background-color: $lightgray;
+        }
+
+        .form {
+            border-radius: 5px;
+        }
+
+        i {
+            margin-right: 6px;
+        }
+
+        label {
+            font-family: "HeroNewThin";
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px 30px;
+            border: 2px solid $purple;
+            background: none;
+            outline: none;
+            color: $purple;
+            font-family: "HeroNewHairline";
+            border-radius: 50px;
+            font-size: 20px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        h4 {
+            font-family: "HeroNewRegular";
+        }
+
+        input {
+            outline: none;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 40px;
+        }
+    }
 }

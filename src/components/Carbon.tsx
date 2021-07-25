@@ -104,11 +104,13 @@ function Carbon() {
   const onChangeNine = (event: any) => { setNine(event.target.value); changePounds(); };
 
   return (
-    <div className="Water">
+    <div className="Carbon">
       <div className="top">
         <NavBar />
         <div className="centered"><h1>CARBON FOOTPRINT</h1></div>
       </div>
+
+      <br />
 
       <div className="content">
         <div className="grid">

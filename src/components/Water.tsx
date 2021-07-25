@@ -116,6 +116,8 @@ function Water() {
         <div className="centered"><h1>WATER</h1></div>
       </div>
 
+      <br />
+
       <div className="content">
         <div className="grid">
           <div className="gridItem">
