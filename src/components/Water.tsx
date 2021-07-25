@@ -36,7 +36,7 @@ function Water() {
     },
     axisX: {
       title: "Years",
-      prefix: "1",
+      prefix: "",
       interval: 1
     },
     data: [{type: "line", toolTipContent: "YOUR PATH: {x} yr. - {y} gal.", dataPoints: [
@@ -183,13 +183,13 @@ function Water() {
           <div className="gridItem">
             <h4>How Much You Spend</h4>
             <div className="grid">
-              <div className="gridItem slickBox"> You use ${gallons} daily </div>
-              <div className="gridItem slickBox"> A person should use ~210 gallons weekly </div>
+              <div className="gridItem slickBox"> You use {gallons} daily </div>
+              <div className="gridItem slickBox"> An average person uses ~210 gallons weekly </div>
             </div>
 
             <br />
 
-            <div className="slickBox">Gallons Wasted: ${gallons - 210}</div>
+            <div className="slickBox">Gallons Wasted: {gallons - 210}</div>
             <br />
             <div className="slickBox">
               <CanvasJSChart options = {options}
