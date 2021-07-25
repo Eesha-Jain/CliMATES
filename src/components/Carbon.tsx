@@ -149,7 +149,7 @@ function Carbon() {
                 <input type="number" min="0" value={eight} onChange={onChangeEight} />
                 <br />
 
-                <label><i className="fas fa-hamburger"></i>How many pounds of carbon do other services use </label>
+                <label><i className="fas fa-question"></i>How many pounds of carbon do other services use </label>
                 <input type="number" min="0" value={nine} onChange={onChangeNine} />
                 <br />
 
